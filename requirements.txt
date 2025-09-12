@@ -1,0 +1,9 @@
+Django==5.2.5
+Dotenv==0.9.9
+djangorestframework==3.16.0
+django-cors-headers==4.7.0
+gunicorn==23.0.0
+whitenoise==6.9.0
+django-db-logger>=0.1.12
+drf-spectacular
+psycopg2-binary
