@@ -1,8 +1,10 @@
-
-import os
 import json
+import os
+
 from django.core.management.base import BaseCommand
+
 from apps.pizzas.models import Pizza
+
 
 class Command(BaseCommand):
     help = 'Popula a tabela Pizza com dados iniciais'
@@ -36,8 +38,8 @@ class Command(BaseCommand):
 
                 # Campos padrão (incluindo ForeignKeys)
                 defaults_data = {'image': item.get('image'),
-                    'price': item.get('price'),
-                    'description': item.get('description')}
+                                 'price': item.get('price'),
+                                 'description': item.get('description')}
 
                 obj, created = Pizza.objects.get_or_create(
                     **unique_data,
