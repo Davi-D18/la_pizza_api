@@ -33,6 +33,7 @@ class BaseSettings:
         "corsheaders",
         "core",
         "django_db_logger",
+        'apps.pizzas'
     ]
 
     MIDDLEWARE = [
